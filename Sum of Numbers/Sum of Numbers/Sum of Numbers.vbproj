@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E5A472A-4EBC-4658-83F5-F482E9986446}</ProjectGuid>
+    <ProjectGuid>{453C7111-A82C-4003-9D97-14C81D4D0668}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Rock_Paper_Scissors.My.MyApplication</StartupObject>
-    <RootNamespace>Rock_Paper_Scissors</RootNamespace>
-    <AssemblyName>Rock Paper Scissors</AssemblyName>
+    <StartupObject>Sum_of_Numbers.My.MyApplication</StartupObject>
+    <RootNamespace>Sum_of_Numbers</RootNamespace>
+    <AssemblyName>Sum of Numbers</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Rock Paper Scissors.xml</DocumentationFile>
+    <DocumentationFile>Sum of Numbers.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Rock Paper Scissors.xml</DocumentationFile>
+    <DocumentationFile>Sum of Numbers.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -57,7 +55,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -73,10 +70,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\RockPaperScissors.Designer.vb">
-      <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\RockPaperScissors.vb">
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +94,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\RockPaperScissors.resx">
-      <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -118,20 +116,12 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bigstock-Rock-Paper-Scissors-Rock-Hand-49379648.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rock-paper-scissors_%28paper%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rock-paper-scissors_%28scissors%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dwayne_The_Rock_Johnson_pro.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\qbHME84.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
