@@ -35,7 +35,10 @@
             intRock = 0
             intPaper = 0
             intScissors = 0
-            lblWinning.Text = ToString()
+            lblWinning.Text = String.Empty
+            lblPaper.Text = String.Empty
+            lblRock.Text = String.Empty
+            lblScissors.Text = String.Empty
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRock.Click

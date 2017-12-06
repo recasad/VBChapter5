@@ -29,9 +29,9 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.lstOutput = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -40,22 +40,20 @@ Partial Class Form1
         '
         Me.cboOrganisms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboOrganisms.FormattingEnabled = True
-        Me.cboOrganisms.Items.AddRange(New Object() {"1", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "2", "20", "3", "4", "5", "6", "7", "8", "9"})
+        Me.cboOrganisms.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
         Me.cboOrganisms.Location = New System.Drawing.Point(212, 29)
         Me.cboOrganisms.Name = "cboOrganisms"
         Me.cboOrganisms.Size = New System.Drawing.Size(121, 21)
-        Me.cboOrganisms.Sorted = True
         Me.cboOrganisms.TabIndex = 0
         '
         'cboDays
         '
         Me.cboDays.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboDays.FormattingEnabled = True
-        Me.cboDays.Items.AddRange(New Object() {"1", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "2", "20", "3", "4", "5", "6", "7", "8", "9"})
+        Me.cboDays.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
         Me.cboDays.Location = New System.Drawing.Point(212, 82)
         Me.cboDays.Name = "cboDays"
         Me.cboDays.Size = New System.Drawing.Size(121, 21)
-        Me.cboDays.Sorted = True
         Me.cboDays.TabIndex = 1
         '
         'txtIncrease
@@ -110,14 +108,14 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Please Enter Information"
         '
-        'btnCalculate
+        'btnExit
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(9, 119)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(104, 35)
-        Me.btnCalculate.TabIndex = 6
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(229, 119)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(104, 35)
+        Me.btnExit.TabIndex = 8
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnClear
         '
@@ -128,14 +126,14 @@ Partial Class Form1
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
-        'btnExit
+        'btnCalculate
         '
-        Me.btnExit.Location = New System.Drawing.Point(229, 119)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(104, 35)
-        Me.btnExit.TabIndex = 8
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnCalculate.Location = New System.Drawing.Point(9, 119)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(104, 35)
+        Me.btnCalculate.TabIndex = 6
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
         '
         'lstOutput
         '

@@ -131,7 +131,6 @@ Partial Class frmRockPaperScissors
         Me.lblWinning.Name = "lblWinning"
         Me.lblWinning.Size = New System.Drawing.Size(400, 85)
         Me.lblWinning.TabIndex = 8
-        Me.lblWinning.Text = "Label2"
         Me.lblWinning.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblScissors
