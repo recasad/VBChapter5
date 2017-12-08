@@ -24,9 +24,10 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnGuess = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtGuess = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -47,12 +48,12 @@ Partial Class Form1
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtGuess
         '
-        Me.TextBox1.Location = New System.Drawing.Point(59, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(156, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtGuess.Location = New System.Drawing.Point(59, 37)
+        Me.txtGuess.Name = "txtGuess"
+        Me.txtGuess.Size = New System.Drawing.Size(156, 20)
+        Me.txtGuess.TabIndex = 2
         '
         'Label1
         '
@@ -65,20 +66,30 @@ Partial Class Form1
         '
         'lblResult
         '
-        Me.lblResult.Location = New System.Drawing.Point(33, 110)
+        Me.lblResult.Location = New System.Drawing.Point(33, 120)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(215, 45)
+        Me.lblResult.Size = New System.Drawing.Size(215, 35)
         Me.lblResult.TabIndex = 4
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(59, 92)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(156, 23)
+        Me.btnReset.TabIndex = 5
+        Me.btnReset.Text = "Reset Number"
+        Me.btnReset.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 164)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtGuess)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnGuess)
         Me.Name = "Form1"
@@ -89,8 +100,9 @@ Partial Class Form1
     End Sub
     Friend WithEvents btnGuess As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtGuess As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblResult As System.Windows.Forms.Label
+    Friend WithEvents btnReset As System.Windows.Forms.Button
 
 End Class
