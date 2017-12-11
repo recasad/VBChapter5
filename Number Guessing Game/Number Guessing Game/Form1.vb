@@ -26,7 +26,12 @@
         End If
     End Sub
 
-    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
-        lblResult.Tex
+    Private Sub btnReset_Click(sender As Object, e As EventArgs)
+        lblResult.Text = String.Empty
+        txtGuess.Clear()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
     End Sub
 End Class

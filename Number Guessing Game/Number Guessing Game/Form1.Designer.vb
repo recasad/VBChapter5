@@ -27,7 +27,6 @@ Partial Class Form1
         Me.txtGuess = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
-        Me.btnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -66,34 +65,24 @@ Partial Class Form1
         '
         'lblResult
         '
-        Me.lblResult.Location = New System.Drawing.Point(33, 120)
+        Me.lblResult.Location = New System.Drawing.Point(30, 89)
         Me.lblResult.Name = "lblResult"
         Me.lblResult.Size = New System.Drawing.Size(215, 35)
         Me.lblResult.TabIndex = 4
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'btnReset
-        '
-        Me.btnReset.Location = New System.Drawing.Point(59, 92)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(156, 23)
-        Me.btnReset.TabIndex = 5
-        Me.btnReset.Text = "Reset Number"
-        Me.btnReset.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 164)
-        Me.Controls.Add(Me.btnReset)
+        Me.ClientSize = New System.Drawing.Size(284, 138)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtGuess)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnGuess)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Number Guesser"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -103,6 +92,5 @@ Partial Class Form1
     Friend WithEvents txtGuess As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblResult As System.Windows.Forms.Label
-    Friend WithEvents btnReset As System.Windows.Forms.Button
 
 End Class
