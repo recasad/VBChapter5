@@ -27,6 +27,6 @@
     End Sub
 
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
-
+        lblResult.Tex
     End Sub
 End Class
